@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="WoArOMOVxjmV7ITEfnXePeE2Dp22mOZHrWsyS1F9">
+
+    <title>Cabinet Demange et Associés</title>
+
+    <link rel="icon" type="image/png" href="http://178.170.121.109:90/img/logo_onglet.png" />
+
+    <!-- Scripts -->
+    <!--<script src="http://178.170.121.109:90/js/app.js" defer></script>-->
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.css"></script>
+    <script rc="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://178.170.121.109:90/css/login.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Styles -->
+</head>
+<body>
+    <div id="site">
+        <div id="site_header"></div>
+        <div id="contenu">
+            <div class="row justify-content-center">
+                <div class="col-md-8" id="box" style="width: 500px;top: 0;position: absolute;left: 30%;margin-top: 125px;">
+                    <div class="card">
+                        <div class="card-header" style="margin-left:10px;padding-top: 15px;font-family: sans-serif;">Se connecter en tant que Commune</div>
+                        <div class="card-body" style="padding-top: 15px;">
+                            <form method="POST" action="http://178.170.121.109:90/login">
+                                <input type="hidden" name="_token" value="WoArOMOVxjmV7ITEfnXePeE2Dp22mOZHrWsyS1F9">
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">Nom d'utilisateur 
+                                    ou Adresse mail</label>
+                                    <div class="col-md-6">
+                                        <input id="name" type="name" class="form-control" name="name" value="" required autocomplete="name" autofocus>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right" style="margin-top: 5px;">Mot de passe</label>
+                                    <div class="col-md-6">
+                                        <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password" style="border: 1px solid #ccc;border-radius: 4px;height: 2rem;">
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-0">
+                                    <div class="col-md-12 center">
+                                        <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            Se connecter
+                                        </button>
+                                    </div>
+                                    <div class="col-md-12 center">
+                                        <a href="http://178.170.121.109:90/password/reset">Mot de passe oublié ?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src= "info.jpg" style="width: 23%;" class=img-responsive>
+            <img src= "voirie.jpg" style="width: 100%;max-width: 300px;margin-top: 50px;position: absolute;top: 0; margin-left: 950px" class=img-responsive>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
